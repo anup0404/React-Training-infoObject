@@ -5,7 +5,8 @@ type ImageProps={
     id:number
     imageUrl:string,
     altInfo:string,
-    isPicked:boolean
+    isPicked:boolean,
+    list:string[]
    }[],
 }
 const Profile = (props:ImageProps) => {
@@ -18,9 +19,10 @@ const Profile = (props:ImageProps) => {
             <div key={image.id}className='containerInfo'>
             <img src={image.imageUrl} alt={image.altInfo}/>
             <ul>
-            <li>Improve the videophone {image.isPicked && '✔'}</li>
-            <li>Prepare aeronautics lectures {image.isPicked && '✔'}</li>
-            <li>Work on the alcohol-fuelled engine {image.isPicked && '✔'}</li>
+             {image.list.map((list)=>{
+               return <li> {list} {image.isPicked && '✔'}</li>
+             })}
+          
           </ul>
           </div>
           </>
