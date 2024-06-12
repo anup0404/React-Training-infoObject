@@ -5,6 +5,10 @@ import Event from "./Components/Day2/Event";
 import Profile from "./Components/Day1/Profile";
 import UpdateObject from "./Components/Day2/UpdateObject";
 import PointerMove from "./Components/Day2/PointerMove";
+import AddingToArray from "./Components/Day3/AddingRemovingToArray";
+import TransformingArray from "./Components/Day3/TransformingArray";
+import ReplacingItem from "./Components/Day3/ReplacingItem";
+import InsertingIntoArray from "./Components/Day3/InsertingIntoArray";
 
 const imageInfo = [
   {
@@ -49,12 +53,13 @@ const imageInfo = [
 const App = () => {
   return (
     <>
+    <h1>Day 1</h1>
       <div>
         <h1>Amazing scientists</h1>
         <Profile imageInfo={imageInfo} />
       </div>
       
-
+     <h1>Day 2</h1>
       <div>
         <h1>Pure Component</h1>
         <Chai />
@@ -89,6 +94,28 @@ const App = () => {
         <h1>Pointer Move</h1>
         <PointerMove/>
       </div>
+
+  <h1>Day 3</h1>
+      <div>
+        <h1>Adding to an array & Removing from an array </h1>
+        <AddingToArray/>
+      </div>
+
+      <div >
+        <h1>Transforming an array</h1>
+        <TransformingArray/>
+      </div>
+
+      <div>
+         <h1>Replacing items in an array</h1>
+         <ReplacingItem/>
+      </div>
+
+      <div>
+        <h1>Inserting into an array</h1>
+        <InsertingIntoArray/>
+      </div>
+
     </>
   );
 };
