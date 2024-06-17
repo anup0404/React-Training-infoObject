@@ -9,6 +9,9 @@ import AddingToArray from "./Components/Day3/AddingRemovingToArray";
 import TransformingArray from "./Components/Day3/TransformingArray";
 import ReplacingItem from "./Components/Day3/ReplacingItem";
 import InsertingIntoArray from "./Components/Day3/InsertingIntoArray";
+import Reducer from "./Components/Day5/Reducer";
+import Login from "./Components/Day6/Login";
+import Profile1 from "./Components/Day6/Profile1";
 
 const imageInfo = [
   {
@@ -53,18 +56,17 @@ const imageInfo = [
 const App = () => {
   return (
     <>
-    <h1>Day 1</h1>
+      <h1>Day 1</h1>
       <div>
         <h1>Amazing scientists</h1>
         <Profile imageInfo={imageInfo} />
       </div>
-      
-     <h1>Day 2</h1>
+
+      <h1>Day 2</h1>
       <div>
         <h1>Pure Component</h1>
         <Chai />
       </div>
-
 
       <div>
         <h1>Responding to events </h1>
@@ -72,50 +74,60 @@ const App = () => {
         <Event handleClick={() => alert("uploading")} />
       </div>
 
-
       <div>
         <h1>State as a snapshot </h1>
         <h2>Chat App</h2>
-        <ChatApp/>
+        <ChatApp />
       </div>
 
       <div>
         <h1>Counter with state management</h1>
-        <Counter/>
+        <Counter />
       </div>
-
 
       <div>
         <h1>Updating objects in state </h1>
-       <UpdateObject/>
+        <UpdateObject />
       </div>
 
       <div>
         <h1>Pointer Move</h1>
-        <PointerMove/>
+        <PointerMove />
       </div>
 
-  <h1>Day 3</h1>
+      <h1>Day 3</h1>
       <div>
         <h1>Adding to an array & Removing from an array </h1>
-        <AddingToArray/>
-      </div>
-
-      <div >
-        <h1>Transforming an array</h1>
-        <TransformingArray/>
+        <AddingToArray />
       </div>
 
       <div>
-         <h1>Replacing items in an array</h1>
-         <ReplacingItem/>
+        <h1>Transforming an array</h1>
+        <TransformingArray />
+      </div>
+
+      <div>
+        <h1>Replacing items in an array</h1>
+        <ReplacingItem />
       </div>
 
       <div>
         <h1>Inserting into an array</h1>
-        <InsertingIntoArray/>
+        <InsertingIntoArray />
       </div>
 
+      <h1>Day 5</h1>
+      <div>
+        <h1>Extracting State Logic into a Reducer</h1>
+        <Reducer />
+      </div>
+
+      <h1>Day 6</h1>
+      <div>
+        <h1>Context api</h1>
+        <Login/>
+        <Profile1/>
+      </div>
     </>
   );
 };
