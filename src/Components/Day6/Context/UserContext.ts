@@ -9,7 +9,7 @@ type UserContextType = {
 const UserContext = createContext<UserContextType>({
     user: {
         userName: "",
-        password: ""
+        password: "" 
     },
     setUser: () => {} 
 });

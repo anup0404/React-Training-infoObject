@@ -10,11 +10,11 @@ const Login: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted");
-
-    console.log("user:",userName)
       const newUser: User = { userName, password };
       userContext.setUser(newUser);
+      setPassword('');
+      setUserName('');
+    
   };
 
   return (

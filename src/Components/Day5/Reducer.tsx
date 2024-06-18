@@ -2,11 +2,8 @@ import React, { useReducer, useState } from "react";
 import taskReducer, { Action, Task } from "./taskReducer";
 import TaskList from "./TaskList";
 
-type props = {
-  id: number;
-  name: string;
-};
-const INITIAL_ARTIST: props[] = [
+
+const INITIAL_ARTIST: Task[] = [
   { id: 0, name: "Marta Colvin Andrade" },
   { id: 1, name: "Lamidi Olonade Fakeye" },
   { id: 2, name: "Louise Nevelson" },

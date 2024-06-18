@@ -6,13 +6,13 @@ const Profile1 = () => {
 
     return (
         <>
-            {userContext  && (
+            {userContext.user.userName  && (
                 <>
                     <h1>UserName: {userContext.user?.userName}</h1>
                     <h1>Password: {userContext.user?.password}</h1>
                 </>
             )}
-            {userContext === null && (
+            {userContext.user.userName === '' && (
                 <>
                     <h1>No user logged in</h1>
                 </>

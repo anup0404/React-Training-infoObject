@@ -12,6 +12,10 @@ import InsertingIntoArray from "./Components/Day3/InsertingIntoArray";
 import Reducer from "./Components/Day5/Reducer";
 import Login from "./Components/Day6/Login";
 import Profile1 from "./Components/Day6/Profile1";
+import UserContextProvider from "./Components/Day6/Context/UserContextProvider";
+import ReducerAndContext from "./Components/Day7/ReducerAndContext";
+import UseRefCounter from "./Components/Day7/UseRef/UseRefCounter";
+import StopWatch from "./Components/Day7/UseRef/StopWatch/StopWatch";
 
 const imageInfo = [
   {
@@ -124,11 +128,29 @@ const App = () => {
 
       <h1>Day 6</h1>
       <div>
+        <UserContextProvider>
         <h1>Context api</h1>
         <Login/>
         <Profile1/>
+        </UserContextProvider>
       </div>
+
+
+
+      <h1>Day 7</h1>
+      <div>
+        <h1>Scaling Up with Reducer and Context</h1>
+        <ReducerAndContext/>
+      </div>
+      <UseRefCounter/>
+<h1>StopWatch</h1>
+      <div style={{display:'flex', alignItems:'center',justifyContent:'space-around'}}>
+        
+      <StopWatch/>
+    </div>
     </>
+
+    
   );
 };
 
