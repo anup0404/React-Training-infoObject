@@ -16,6 +16,8 @@ import UserContextProvider from "./Components/Day6/Context/UserContextProvider";
 import ReducerAndContext from "./Components/Day7/ReducerAndContext";
 import UseRefCounter from "./Components/Day7/UseRef/UseRefCounter";
 import StopWatch from "./Components/Day7/UseRef/StopWatch/StopWatch";
+import SynchronizingWithEffect from "./Components/Day8/SynchronizingWithEffect";
+import ReduxApp from "./Components/Redux/ReduxApp";
 
 const imageInfo = [
   {
@@ -129,28 +131,39 @@ const App = () => {
       <h1>Day 6</h1>
       <div>
         <UserContextProvider>
-        <h1>Context api</h1>
-        <Login/>
-        <Profile1/>
+          <h1>Context api</h1>
+          <Login />
+          <Profile1 />
         </UserContextProvider>
       </div>
-
-
 
       <h1>Day 7</h1>
       <div>
         <h1>Scaling Up with Reducer and Context</h1>
-        <ReducerAndContext/>
+        <ReducerAndContext />
       </div>
-      <UseRefCounter/>
-<h1>StopWatch</h1>
-      <div style={{display:'flex', alignItems:'center',justifyContent:'space-around'}}>
-        
-      <StopWatch/>
-    </div>
-    </>
+      <UseRefCounter />
+      <h1>StopWatch</h1>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-around",
+        }}
+      >
+        <StopWatch />
+      </div>
 
-    
+      <h1>Day 8</h1>
+      <div>
+        <SynchronizingWithEffect/>
+      </div>
+
+      <h1>Redux</h1>
+      <div>
+      <ReduxApp/>
+      </div>
+    </>
   );
 };
 
